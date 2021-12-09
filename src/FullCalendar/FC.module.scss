@@ -1,0 +1,44 @@
+:root {
+  --cellBorder: 1px solid #ccc;
+  --cellPadding: 0.5em;
+}
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-size: 14px;
+}
+
+.calendar {
+  border-left: var(--cellBorder);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .header {
+    display: flex;
+  }
+
+  .body {
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+  }
+}
+
+.cell {
+  flex: 1 1 0;
+  font-size: 0.95em;
+  border-right: var(--cellBorder);
+  padding: var(--cellPadding);
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex: 1 1 0;
+  border-bottom: var(--cellBorder);
+}
